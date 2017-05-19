@@ -1,0 +1,648 @@
+*{
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+	text-decoration: none;
+}
+
+
+body{
+	width: 100%;
+	min-width: 1400px;
+	/*max-width: 1600px;*/
+	/*margin: 0 auto;*/
+}
+
+
+/*头部开始*/
+header.header{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 60px;
+
+	background-color: lightgreen;
+
+	position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: 1;
+}
+
+/*二层居中*/
+header>.header_bg{
+	width: 1200px;
+	margin: 0 auto;
+
+	height: 100%;
+	/*border: 1px red solid;*/
+}
+
+/*logo*/
+.header_bg>.logo{
+	/*height: 100%;*/
+	float: left;
+
+	cursor: pointer;
+}
+
+/*导航*/
+.logo+nav.nav{
+	float: right;
+}
+
+nav a{
+	display: block;
+	float: left;
+
+	height: 100%;
+	line-height: 60px;
+
+	width: 100px;
+	text-align: center;
+
+	color: #000;
+}
+
+nav a:hover {
+	background-color: rgb(254,160,5);
+}
+
+/*头部结束*/
+
+
+/*conten内容开始*/
+/*1 首页*/
+.home_page{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+
+	/*border: 1px red solid;*/
+	/*position: relative;*/
+	/*left: 0;*/
+
+	background-image: url(img/b1_bg.jpg);
+}
+
+.home_page .home_page_bg{
+	position: relative;
+	width: 1310px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.home_page_bg img{
+	/*border: 1px red solid;*/
+	position: absolute;
+}
+
+.home_page_bg img:nth-child(1){
+	bottom: 0;
+	left: -180px;
+}
+
+
+/*手机*/
+.home_page_bg .phone{
+	left: 0;
+	bottom: 80px;
+
+	/*动画*/
+	animation: phone 1s linear 0s 1 alternate forwards;
+	                                 /*轮回      向前*/  
+}
+
+/*手机 动画*/
+@keyframes phone{
+	0% {
+	    left: -50px;
+	    opacity: 0;
+	}
+	100% {
+	    left: 0;
+	    opacity: 1;
+	}
+}
+
+/*微信*/
+.home_page_bg .weixi{
+	left: 710px;
+	bottom: 425px;
+
+	animation: weixin 3s linear 0s 1 alternate forwards;
+}
+
+@keyframes weixin{
+	0% {
+	    opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+
+
+/*开始按钮*/
+.home_page_bg .btn{
+	left: 720px;
+	bottom: 370px;
+	cursor: pointer;
+
+	animation: weixin 1s linear 0s infinite alternate forwards;
+	                               /*无限次*/
+
+}
+
+/*纸张2*/
+.home_page_bg  .paper_2{
+	left: 1005px;
+	bottom: 310px;
+
+	animation: paper 1s linear 0s 1 alternate forwards;
+}
+
+@keyframes paper{
+	0% {
+	    bottom: 0;
+	}
+	100% {
+	    bottom: 310px;
+	}
+}
+
+
+
+/*2 申请加入*/
+.markete{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+
+	/*border: 1px red solid;*/
+	background-image: url(img/b2_bg.jpg);
+}
+
+.markete .markete_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+	/*border: 1px red solid;*/
+	overflow: hidden;
+
+}
+
+.markete_bg img{
+	position: absolute;
+}
+
+/*手机*/
+.markete_bg .hand_phone{
+	left: -220px;
+	bottom: -30px;
+
+	animation: hand_phone 1.5s linear 0s 1 alternate forwards;
+
+}
+
+@keyframes hand_phone{
+	0% {
+	    bottom: -400px;
+	}
+	100% {
+	    bottom: -30px;
+	}
+}
+
+
+/*气球1*/
+.markete_bg .balloon_1{
+	left: 300px;
+	top: 300px;
+
+	animation: balloon_1 1.5s linear 0s 1 alternate forwards;
+
+}
+
+@keyframes balloon_1{
+	0% {
+	    top: -40px;
+	}
+	100% {
+	    top: 300px;
+	}
+}
+
+/*气球2*/
+.markete_bg .balloon_2{
+	left: 790px;
+	top: 400px;
+
+	animation: balloon_2 1.5s linear 0s 1 alternate forwards;
+
+}
+
+@keyframes balloon_2{
+	0% {
+	    top: -20px;
+	}
+	100% {
+	    top: 400px;
+	}
+}
+
+/*.markete_bg .balloon_3{
+	left: -300px;
+	top: 150px;
+}*/
+
+/*气球4*/
+.markete_bg .balloon_4{
+	left: 1000px;
+	top: 380px;
+
+	animation: balloon_4 1.5s linear 0s 1 alternate forwards;
+
+}
+
+@keyframes balloon_4{
+	0% {
+	    top: 0px;
+	}
+	100% {
+	    top: 380px;
+	}
+}
+
+/*申请加入 用户 文本*/
+.markete_bg  .user{
+	position: absolute;
+	left: 630px;
+    top: 360px;
+
+    /*width: 100px;*/
+    /*height: 100px;*/
+
+    /*border: 1px red solid;*/
+	color: #fff;
+
+}
+
+.user .user_top{
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.user .user_bottom{
+	font-size: 13px;
+}
+
+
+
+
+
+
+/*3 营销手段*/
+.serve{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 950px;
+
+	/*border: 1px red solid;*/
+	background-image: url(img/b3_bg.jpg);
+
+	position: relative;
+}
+
+/*图*/
+.serve>img.img_bg{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+/*第二层*/
+.serve_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+	/*border: 1px red solid;*/
+	overflow: hidden;
+
+}
+
+/*第二层图*/
+.serve_bg img{
+	position: absolute;
+	left: 450px;
+	top: 350px;
+
+	animation: rotate 4s linear 0s 1 alternate forwards;
+}
+
+@keyframes rotate{
+	0% {
+	    transform: rotateZ(720deg) translateX(0) translateY(0);
+	    /*形变      旋转            位移*/
+
+	    /*transition   过渡*/
+	}
+
+	50% {
+	    transform: rotateZ(0deg) translateX(300px) translateY(300px);
+	}
+
+	100% {
+	    transform: rotateZ(720deg) translateX(0) translateY(0);
+	}
+}
+
+
+
+/*标题手段*/
+.serve_bg .title{
+	width: 970px;
+
+	text-align: center;
+	height: 90px;
+
+	color: rgb(102,102,102);
+    font-weight: 800;
+
+    font-size: 28px;
+
+	position: absolute;
+    left: 100px;
+    top: 200px;
+
+	padding-bottom: 10px;
+	border-bottom: 1px lightgray solid;
+}
+
+.title p{
+	position: relative;
+	left: 52px;
+}
+
+.title p span.spacal{
+	color: rgb(254,160,5);
+}
+
+.title .title_en{
+	color: rgb(188,188,191);
+    margin-top: 30px;
+    font-size: 0.5em;
+    position: relative;
+    left: 70px; 
+}
+
+/*内容*/
+/*左*/
+.serve_bg .content_left{
+	width: 300px;
+	/*height: 100px;*/
+
+    position: absolute;
+    left: 200px;
+    top: 360px;
+
+    text-align: right;
+    line-height: 25px;
+
+    font-size: 0.7em;
+
+    /*border: 1px red solid;*/
+
+    animation: left_c 3s linear 0s 1 alternate forwards;
+}
+
+@keyframes left_c{
+	0% {
+	    left: -200px;
+	}
+	100% {
+	    left: 200px;
+	}
+}
+
+.content_left>.content_s{
+	margin-bottom: 40px;
+}
+
+.content_left>.content_s>.card{
+    font-size: 1.5em;
+    color: rgb(254,160,5);
+}
+
+
+/*互动营销*/
+.content_left .interaction{
+	position: relative;
+	/*top: -10px;*/
+	right: 60px;
+
+    animation: interaction 3s linear 0s 1 alternate forwards;
+
+}
+
+@keyframes interaction{
+	0% {
+	    left: 0px;
+	}
+	100% {
+	    left: -60px;
+	}
+}
+
+/*右*/
+.serve_bg .content_right{
+	position: absolute;
+	left: 780px;
+	top: 360px;
+
+	text-align: left;
+    line-height: 25px;
+
+    font-size: 0.7em;
+    width: 300px;
+    /*height: 100px;*/
+
+    /*border: 1px red solid;*/
+
+    animation: right_c 3s linear 0s 1 alternate forwards;
+}
+
+@keyframes right_c{
+	0% {
+	    left: 1180px;
+	}
+	100% {
+	    left: 780px;
+	}
+}
+
+
+/*意见呼叫*/
+.content_right .interaction{
+	position: relative;
+	/*top: -10px;*/
+	left: 50px;
+
+    animation: opinion 3s linear 0s 1 alternate forwards;
+
+}
+
+@keyframes opinion{
+	0% {
+	    left: 0px;
+	}
+	100% {
+	    left: 50px;
+	}
+}
+
+
+/*4 、服务优势*/
+.apply{  
+    width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+	border: 1px red solid;
+	background-image: url(img/b4_bg.jpg);
+
+	position: relative;
+}
+
+.apply_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+	border: 1px blue solid;
+
+	position: relative;
+}
+
+.apply_bg img{
+	position: absolute;
+}
+
+/*图片*/
+.apply_bg .KTV{
+	left: 650px;
+    top: 200px;
+
+    animation: KTV 2s linear 0s 1 alternate forwards;
+}
+
+
+@keyframes KTV{
+	0% {
+	    left: 900px;
+	    opacity: 0;
+	}
+	100% {
+	    left: 650px;
+	    opacity: 1;
+	}
+}
+
+
+.apply_bg .MVP{
+	left: 900px;
+    top: 200px;
+
+    animation: MVP 2s linear 0s 1 alternate forwards;
+}
+
+@keyframes MVP{
+	0% {
+	    opacity: 0;
+	}
+
+	50% {
+	    opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+/*图片动画结束*/
+
+
+/*T优势*/
+.apply_bg .apply_title{
+	font-size: 2em;
+    width: 200px;
+    color: white;
+
+    position: absolute;
+    left: 200px;
+    top: 200px;
+
+    animation: apply_title 2s linear 0s 1 alternate forwards;
+}
+
+
+
+@keyframes apply_title{
+	0% {
+		top: 900px;
+	}
+
+	50% {
+		top: 900px;
+	}
+
+	100% {
+	    top: 200px;
+	}
+}
+
+/*优势内容*/
+.apply_bg .titles_bg{
+	position: absolute;
+    left: 200px;
+    top: 300px;
+    color: white;
+    font-size: 0.8em;
+
+    /*width: 100px;*/
+    /*height: 100px;*/
+
+    /*border: 1px red solid;*/
+}
+
+
+.titles_bg .title_contents{
+	/*margin-bottom: 20px;*/
+	height: 66px;
+	width: 380px;
+
+	position: relative;
+	top: 500px;
+}
+
+
+.title_contents ._title_hangye{
+	font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+
+/*content内容结束*/
