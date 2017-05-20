@@ -524,7 +524,7 @@ nav a:hover {
 	min-width: 1400px;
 
 	height: 900px;
-	border: 1px red solid;
+	/*border: 1px red solid;*/
 	background-image: url(img/b4_bg.jpg);
 
 	position: relative;
@@ -537,7 +537,7 @@ nav a:hover {
 	height: 100%;
 
 	margin: 0 auto;
-	border: 1px blue solid;
+	/*border: 1px blue solid;*/
 
 	position: relative;
 	overflow: hidden;
@@ -610,7 +610,7 @@ nav a:hover {
 		top: 900px;
 	}
 
-	50% {
+	40% {
 		top: 900px;
 	}
 
@@ -620,59 +620,58 @@ nav a:hover {
 }
 
 /*优势内容*/
-/*.apply_bg .titles_bg{
-	position: absolute;
-    left: 200px;
-    top: 300px;
-    color: white;
-    font-size: 0.8em;
 
-    width: 380px;
-    height: 500px;
-
-    border: 1px red solid;
-}*/
-
-.title_contents ._title_hangye{
+.apply_bg ._title_hangye{
 	font-size: 1.5em;
     margin-bottom: 5px;
 }
 
 
-.titles_bg .title_contents{
+.apply_bg .title_contents{
 	/*margin-bottom: 20px;*/
 	/*height: 66px;*/
-	/*width: 380px;*/
+	width: 380px;
 
 	position: absolute;
 	left: 200px;
-	top: 0;
+	/*top: 0;*/
+
+	color: white;
+    font-size: 0.8em;
+
 
 	/*border: 1px red solid;*/
 }
 
+.apply_bg ._title_hangye{
+	font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+
 /*行业*/
 .industry{
 	animation:industry 2s linear 0s 1 alternate forwards;
-	top: 0;
+	top: 300px;
 }
 
 
 /*行业*/
 @keyframes industry{
-	0% {
+	0%{
 		top: 900px;
 	}
+
 	10%{
-		top: 900px;
+		top:900px;
 	}
 
-	50% {
-		top: 0px;
+	50%{
+		top: 300px;
 	}
 
-	100% {
-	    top: 0px;
+	100%{
+		top: 300px;
 	}
 }
 
@@ -680,68 +679,41 @@ nav a:hover {
 /*团队*/
 .team{
 	animation:team 2s linear 0s 1 alternate forwards;
+	top: 360px;
 }
 
 @keyframes team{
-	0% {
-		top: 900px;
-	}
-	20%{
-		top: 900px;
-	}
-
-	50% {
-		top: 60px;
-	}
-
-	100% {
-	    top: 60px;
-	}
+	0%{top: 900px;}
+    20%{top: 900px;}
+    60%{top: 360px;}
+    100%{top: 360px;}
 }
 
 /*定制服务*/
 .customized_sever{
 	animation:d_sever 2s linear 0s 1 alternate forwards;
+	top: 420px;
 }
 
 @keyframes d_sever{
-	0% {
-		top: 900px;
-	}
-	10%{
-		top: 900px;
-	}
-
-	50% {
-		top: 120px;
-	}
-
-	100% {
-	    top:120px;
-	}
+	0%{top: 900px;}
+    30%{top: 900px;}
+    70%{top:420px;}
+    100%{top: 420px;}
 }
 
 
 /*安全*/
 .safety{
 	animation:safety 2s linear 0s 1 alternate forwards;
+	top: 480px;
 }
 
 @keyframes safety{
-	0% {
-		top: 900px;
-	}
-	10%{
-		top: 900px;
-	}
-
-	50% {
-		top: 180px;
-	}
-
-	100% {
-	    top:180px;
-	}
+	0%{top: 900px;}
+	40%{top: 900px;}
+	80%{top: 480px;}
+	100%{top: 480px;}
 }
 
 
@@ -750,23 +722,14 @@ nav a:hover {
 /*反馈*/
 .feedback{
 	animation:feedback 2s linear 0s 1 alternate forwards;
+	top: 540px;
 }
 
 @keyframes feedback{
-	0% {
-		top: 900px;
-	}
-	10%{
-		top: 900px;
-	}
-
-	50% {
-		top: 210px;
-	}
-
-	100% {
-	    top:210px;
-	}
+	0%{top: 900px;}
+    50%{top:900px;}
+    90%{top: 540px}
+    100%{top: 540px;}
 }
 
 
@@ -775,27 +738,119 @@ nav a:hover {
 /*开发实力*/
 .strength{
 	animation:strength 2s linear 0s 1 alternate forwards;
+
+	position: absolute;
+	top: 600px;
 }
 
 
 @keyframes strength{
-	0% {
+	0%{
 		top: 900px;
 	}
-
-	10%{
-		top: 900px;
+	60%{
+		top:900px;
 	}
-
-	50% {
-		top: 240px;
-	}
-
-	100% {
-	    top:240px;
+	100%{
+		top: 600px;
 	}
 }
 
+/*5 特色功能*/
+.function{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+
+	/*border: 1px red solid;*/
+	background-image: url(img/b5_bg.jpg);
+}
+
+.function .function_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+	/*border: 1px red solid;*/
+	overflow: hidden;
+
+}
+
+/*标题*/
+.function_bg .feature_title{
+	width: 850px;
+    text-align: center;
+    
+    margin: 160px auto;
+    /*margin-bottom: 0;*/
+    margin-bottom: 10px;
 
 
-/*content内容结束*/
+    /*position: relative;*/
+    /*border: 1px red solid;*/
+}
+
+/*大标题*/
+.feature_title p:nth-child(1){
+	color: rgb(102,102,102);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature_title span{
+	color: rgb(254,160,5);
+}
+
+/*小标题*/
+.feature_title p:nth-child(2){
+	color: rgb(188,188,188);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+/*功能*/
+.function_bg .feature{
+	width: 870px;
+    border: 1px solid red;
+    border-bottom: none;
+
+    margin: 0 auto;
+
+    padding: 0 50px;
+    /*padding-top: 10px;*/
+}
+
+.feature>div{
+	width: 185px;
+    height: 160px; 
+
+    margin: 10px 15px;
+
+    border: 1px solid green;
+    float: left;
+
+    border-radius: 5px;
+    text-align: center;
+
+    font-size: 0.8em;
+    color: rgb(119,119,119);
+}
+
+.feature>div>div.img{
+	width: 90px;
+    height: 95px;
+    margin: 0 auto;
+
+    border: 1px red solid;
+}
+
+.feature>div p:nth-child(2){
+	font-size: 1.5em;
+    color: black;
+}
+
+/*content内容结束
