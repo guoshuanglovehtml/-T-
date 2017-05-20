@@ -761,7 +761,7 @@ nav a:hover {
 	width: 100%;
 	min-width: 1400px;
 
-	height: 900px;
+	height: 914px;
 
 	/*border: 1px red solid;*/
 	background-image: url(img/b5_bg.jpg);
@@ -815,20 +815,33 @@ nav a:hover {
 /*功能*/
 .function_bg .feature{
 	width: 870px;
-    border: 1px solid red;
-    border-bottom: none;
+    border-top: 1px solid red;
+    /*border-bottom: none;*/
 
     margin: 0 auto;
+    margin-top: 20px;
 
     padding: 0 50px;
     /*padding-top: 10px;*/
+
+    position: relative;
 }
 
-.feature>div{
+.feature .first{
+    /*border: 1px solid red;*/
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 162px;
+
+    position: relative;
+}
+
+.feature>.first>div{
 	width: 185px;
     height: 160px; 
 
-    margin: 10px 15px;
+    margin: 0px 15px;
+    margin-top: 0;
 
     border: 1px solid green;
     float: left;
@@ -840,12 +853,14 @@ nav a:hover {
     color: rgb(119,119,119);
 }
 
-.feature>div>div.img{
+.feature>.first>div>.img{
 	width: 90px;
     height: 95px;
     margin: 0 auto;
 
-    border: 1px red solid;
+    /*border: 1px red solid;*/
+
+    background-repeat: no-repeat;
 }
 
 .feature>div p:nth-child(2){
@@ -853,4 +868,57 @@ nav a:hover {
     color: black;
 }
 
+/*第一行 第一摸块*/
+.feature .first{
+	animation: first 2s linear 0s 1 alternate forwards;
+}
+
+@keyframes first{
+	0% {
+	    position: relative;
+	    top: 160px;
+	}
+
+	100% {
+	    position: relative;
+	    top: 0;
+	}
+}
+
+
+/*第二行 第二摸块*/
+.feature .second{
+	animation: second 2s linear 0s 1 alternate forwards;
+}
+
+@keyframes second{
+	0% {
+	    opacity: 0;
+	}
+
+	50%{
+		opacity: 0;
+	}
+
+	100% {
+	   opacity: 1;
+	}
+}
+
+
+/*第三行 第三摸块*/
+.feature .third{
+	animation: third 2s linear 0s 1 alternate forwards;
+}
+
+@keyframes third{
+	0% {
+	    top: -160px;
+	}
+
+	100%{
+		top: 0;
+	}
+
+}
 /*content内容结束
