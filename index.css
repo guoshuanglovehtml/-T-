@@ -175,7 +175,7 @@ nav a:hover {
 	    bottom: 310px;
 	}
 }
-
+/*首页结束*/
 
 
 /*2 申请加入*/
@@ -305,7 +305,7 @@ nav a:hover {
 .user .user_bottom{
 	font-size: 13px;
 }
-
+/*申请加入结束*/
 
 
 
@@ -516,6 +516,7 @@ nav a:hover {
 	    left: 50px;
 	}
 }
+/*营销手段结束*/
 
 
 /*4 、服务优势*/
@@ -756,6 +757,10 @@ nav a:hover {
 	}
 }
 
+/*服务优势结束*/
+
+
+
 /*5 特色功能*/
 .function{
 	width: 100%;
@@ -921,4 +926,431 @@ nav a:hover {
 	}
 
 }
+/*特色功能结束*/
+
+
+
+/*6技术特点*/
+.technology{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+
+	/*border: 1px red solid;*/
+	background-image: url(img/b6_bg.jpg);
+}
+
+.technology .technology_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+	/*border: 1px red solid;*/
+	overflow: hidden;
+
+}
+
+/*6.1标题*/
+.technology_bg .te_title{
+	position: absolute;
+    left: 250px;
+    top: 200px;
+
+    color: white;
+
+    animation: te_ti_text 3s ease 0s 1 forwards;
+}
+
+.te_title p:nth-child(1) {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.te_title p:nth-child(2) {
+    font-size: 1em;
+}
+
+
+/*6.2中心内容*/
+.te_content{
+	width: 533px;
+    height: 423px;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    margin-left: -266px;
+    background: url(img/b6_02.png);
+}
+
+/*圆点*/
+.te_content img{
+	position: absolute;
+}
+
+.qbx_dian_1 {
+    left: 144px;
+    top: 3px;
+}
+
+.qbx_dian_2 {
+    left: 377px;
+    top: 3px;
+}
+
+.qbx_dian_3 {
+    left: 520px;
+    top: 147px;
+}
+
+.qbx_dian_4 {
+    left: 470px;
+    top: 330px;
+}
+
+.qbx_dian_5 {
+    left: 262px;
+    top: 411px;
+}
+
+.qbx_dian_6 {
+    left: 51px;
+    top: 330px;
+}
+
+.qbx_dian_7 {
+    left: 3px;
+    top: 149px;
+}
+
+
+/*乌云上下*/
+.te_content .jt{
+	width: 40px;
+    height: 35px;
+     /*border: 1px solid red; */
+    position: absolute;
+    left: 250px;
+    top: 120px;
+    overflow: hidden;
+}
+
+
+.jt .jt_up{
+	width: 15px;
+    height: 35px;
+
+    float: left;
+    opacity: 0;
+
+    background: url(img/b6_03.png) 0px 0px;
+
+    animation: jt_up 2s linear 3s infinite forwards;
+}
+
+@keyframes jt_up{
+	0% {
+	    position: relative;
+	    top: 37px;
+	    opacity: 0;
+	}
+
+	1% {
+	    position: relative;
+	    top: 37px;
+	    opacity: 1;
+	}
+
+	100% {
+	    position: relative;
+	    top: -37px;
+	    opacity: 1;
+	}
+}
+
+/*下*/
+.jt .jt_down{
+	width: 15px;
+    height: 35px;
+
+    float: right;
+    opacity: 0;
+    
+    background: url(img/b6_03.png) 15px 35px;
+
+    animation: jt_down 2s linear 3s infinite forwards;
+}
+
+@keyframes jt_down{
+	0% {
+	    position: relative;
+	    top: -37px;
+	    opacity: 0;
+	}
+
+	1% {
+	    position: relative;
+	    top: -37px;
+	    opacity: 1;
+	}
+
+	100% {
+	    position: relative;
+	    top: 37px;
+	    opacity: 1;
+	}
+}
+
+/*文本内容*/
+.te_content div{
+	position: absolute;
+
+	animation: te_ti_text 3s ease 0s 1 forwards;
+
+	width: 200px;
+    height: 40px;
+    font-size: 0.8em;
+    color: white;
+}
+
+@keyframes te_ti_text{
+	0% {
+	    /*right: 650px;*/
+	    opacity: 0;
+	}
+
+	100% {
+	    /*right: 50px;*/
+	    opacity: 1;
+	}
+}
+
+
+.qbx_zi_1{
+	left: 60px;
+    top: -25px;
+}
+
+.qbx_zi_2{
+	left: 403px;
+    top: -15px;
+}
+
+.qbx_zi_3{
+	left: 538px;
+    top: 140px;
+}
+
+.qbx_zi_4{
+	left: 488px;
+    top: 335px;
+}
+
+.qbx_zi_5{
+	left: 203px;
+    top: 430px;
+}
+
+.qbx_zi_6{
+	left: -50px;
+    top: 335px;
+}
+
+.qbx_zi_7{
+	left: -125px;
+    top: 140px;
+}
+
+
+
+
+/*6.3手执笔*/
+.pen{
+	position: absolute;
+    right: 50px;
+    top: 550px;
+
+    animation: pen 3s ease-out 0s 1 forwards;
+}
+
+@keyframes pen{
+	0% {
+	    right: 650px;
+	    opacity: 0;
+	}
+
+	100% {
+	    right: 50px;
+	    opacity: 1;
+	}
+}
+
+/*技术特点结束*/
+
+
+/*7、登录注册*/
+.login_register{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+
+	/*border: 1px red solid;*/
+	background-image: url(img/b7_bg.jpg);
+}
+
+.login_register .login_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+	/*border: 1px red solid;*/
+	overflow: hidden;
+    
+}
+
+/*标题*/
+.login_bg>p{
+	width: 200px;
+    text-align: center;
+    margin: 0 auto;
+
+    margin-top: 294px;
+   
+    font-size: 2em;
+    color: rgb(110, 110, 110);
+}
+
+.login_bg>p span{
+	color: rgb(254, 160, 5);
+}
+
+/*在线服务*/
+.login_bg .online_bg{
+	width: 867px;
+    height: 60px;
+
+    margin: 0 auto;
+
+    
+    border-top: 1px solid grey;
+    position: relative;
+}
+
+.online_bg div{
+	/*display: inline-block;*/
+	float: left;
+}
+
+.online_bg .online{
+	/*display: inline-block;*/
+    width: 100px;
+    height: 45px;
+    margin-top: 20px;
+    margin-right: 136px;
+    background: url(img/login.png) -120px -105px;
+    position: relative;
+    left: -6px;
+}
+
+.online_bg .QQ_online{
+	width: 113px;
+    height: 45px;
+    position: relative;
+    top: 10px;
+    /*margin-right: 20px;*/
+    background: url(img/login.png) 0px -100px;
+}
+
+.online_bg span{
+    /*display: inline-block;*/
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5em;
+    margin-top: 16px;
+    color: rgb(254, 160, 5);
+
+    position: absolute;
+    right: -2px;
+
+}
+/*在线服务结束*/
+
+
+/*登录*/
+.login_bg .login{
+	width: 236px;
+	/*height: 230px;*/
+	/*border: 1px red solid;*/
+
+	margin-left: 222px;
+    margin-top: 30px;
+    /*margin-right: 0px;*/
+
+}
+
+.login fieldset{
+	border: none;
+	margin-bottom: 20px;
+}
+
+.login fieldset span{
+	color: rgb(160,160,160); 
+}
+
+/*id 密码 框*/
+.login input{
+	width: 221px;
+    height: 35px;
+    font-size: 1em;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.login button{
+    width: 140px;
+    height: 38px;
+    color: white;
+    background: rgb(255,165,16);
+
+    outline: none;
+    cursor: pointer;
+
+
+}
+
+/*注册*/
+.login_bg .register{
+	/*margin-right: 222px;*/
+
+	position: absolute;
+	right: 222px;
+	top: 396px;
+}
+
+/*登录注册结束*/
+
+
+/*8底部*/
+footer.footer{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 900px;
+    background: url(img/b7_bg.jpg);
+}
+
+.footer .footer_bg{
+	width: 1310px;
+	height: 100%;
+
+	margin: 0 auto;
+
+	position: relative;
+	border: 1px red solid;
+	overflow: hidden;
 /*content内容结束

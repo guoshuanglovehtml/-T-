@@ -70,4 +70,9 @@ window.onload = function ()
 			this.children[0].style.backgroundImage = "url(" + t_bg[this.index] + ")";				
 		}
 	}
+
+
+	// 2、模块跳转
+	var module = document.getElementsByTagName('module');
+	console.log(module);
 };
