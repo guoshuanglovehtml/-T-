@@ -1371,7 +1371,7 @@ footer.footer{
 	float: left;
 	text-align: center;
 
-	height: 90px;
+	/*height: 90px;*/
 	color: rgb(255,165,16);
 
 	/*font-weight: 800;*/
@@ -1380,16 +1380,59 @@ footer.footer{
     margin-top: 200px;
 
     /*border: 1px red solid;*/
+    margin-right: 62px;
+}
+
+.footer_bg .more{
+	margin-right: 0;
 }
 
 .f_title .English{
     color: #fff;
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 14px;
 }
 
-.f_title p:last-child{
-	color: rgb(255,165,16);
-	font-size: 16px;
+.f_title p:fist-child{
+	/*color: rgb(255,165,16);*/
+	/*font-size: 16px;*/
+    /*margin-top: 100px;*/
+}
+
+.f_title .text{
+	border-bottom: 1px  rgb(255,165,16) solid;
 }
 /*content内容结束*/
+
+.circle{
+	position: fixed;
+	right: 20px;
+	bottom: 0;
+
+	width: 28px;
+	height: 100%;
+
+	/*border: 1px red solid;*/
+
+}
+
+.circle .circle_bg{
+	height: 190px;
+	width: 100%;
+	/*background-color: #ccc;*/
+
+	position: absolute;
+	top: 50%;
+	left: 6px;
+	margin-top:-98px;
+
+	/*color: #fff; */
+}
+
+.circle_bg li a{
+	color: gray;
+	/*width: 10px;
+    height: 10px;*/
+
+    font-size: 20px;
+}

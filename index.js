@@ -86,13 +86,11 @@ window.onload = function ()
 	    timer = null;
     
     // 事件
-	for (var i = 0; i < nav_a.length; i++) 
-	{
-		nav_a[i].index = i ;
-		nav_a[i].onmouseover = function () 
-		{
-			target = module[this.index].offsetTop;
-			window.scrollTo(0,target);
-		}
-	}
+	// for (var i = 0; i < nav_a.length; i++) 
+	// {
+	// 	nav_a[i].index = i ;
+	// 	nav_a[i].onclick = function () 
+	// 	{
+	// 	}
+	// }
 };
