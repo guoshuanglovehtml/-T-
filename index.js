@@ -26,7 +26,7 @@ window.onload = function ()
 	var ex_s_bg = ["img/gnico_05.png","img/gnico_06.png","img/gnico_07.png","img/gnico_08.png"];
 	var ex_t_bg = ["img/gnico_09.png","img/gnico_101.png","img/gnico_111.png","img/gnico_121.png"];
 
-
+    // 换
 	for (var i = 0; i < first.length; i++) 
 	{   
 		// 1.4.2 换
@@ -73,6 +73,26 @@ window.onload = function ()
 
 
 	// 2、模块跳转
-	var module = document.getElementsByTagName('module');
-	console.log(module);
+	// 导航
+	var nav_a = document.getElementsByTagName('nav')[0].children;
+	// console.log(nav_a);
+   
+    // 模块
+	var module = document.getElementsByClassName('module');
+	// console.log(module);
+
+	var leader = 0, 
+	    target = 0,
+	    timer = null;
+    
+    // 事件
+	for (var i = 0; i < nav_a.length; i++) 
+	{
+		nav_a[i].index = i ;
+		nav_a[i].onmouseover = function () 
+		{
+			target = module[this.index].offsetTop;
+			window.scrollTo(0,target);
+		}
+	}
 };
