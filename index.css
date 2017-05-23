@@ -95,14 +95,6 @@ nav a:hover {
 	background-image: url(img/b1_bg.jpg);
 }
 
-/*模块*/
-.module{
-	background-repeat: no-repeat;
-	/*background-size: cover;*/
-    background-size: 100% 100%;
-
-	/*position: absolute;*/
-}
 
 /*首页背景*/
 .home_page .home_page_bg{
@@ -550,7 +542,7 @@ nav a:hover {
 
 .apply_bg{
 	width: 1310px;
-	height: 100%;
+	height: 900px;
 
 	margin: 0 auto;
 	/*border: 1px blue solid;*/
@@ -1122,7 +1114,7 @@ nav a:hover {
 .te_content div{
 	position: absolute;
 
-	animation: te_ti_text 3s ease 0s 1 forwards;
+	animation: te_ti_text 4s linear 0s 1 forwards;
 
 	width: 200px;
     height: 40px;
@@ -1386,10 +1378,53 @@ footer.footer{
 
     /*border: 1px red solid;*/
     margin-right: 62px;
+
+    position: relative;
 }
+
+.footer_bg .join{
+	animation: join 6s ease-out 0s infinite alternate forwards;
+}
+
+@keyframes join{
+	0% {
+	    left: 550px;
+	}
+
+	100% {
+	    left: 0px;
+	}
+}
+
+
+.footer_bg .about{
+	animation: about 4s linear 0s infinite alternate forwards;
+}
+
+@keyframes about{
+	0% {
+	    opacity: 1;
+	}
+
+	100% {
+	    opacity: 0;
+	}
+}
+
 
 .footer_bg .more{
 	margin-right: 0;
+	animation: more 6s ease-out 0s infinite alternate forwards;
+}
+
+@keyframes more{
+	0% {
+	    left: -550px;
+	}
+
+	100% {
+	    left: 0px;
+	}
 }
 
 .f_title .English{
@@ -1407,6 +1442,19 @@ footer.footer{
 .f_title .text{
 	border-bottom: 1px  rgb(255,165,16) solid;
 }
+
+
+
+/*八大模块*/
+.module{
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+    background-size: 100% 100%;
+
+	/*position: absolute;*/
+	height: 1000px;
+}
+
 /*content内容结束*/
 
 .circle{

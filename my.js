@@ -1,7 +1,7 @@
 /**
  * Created by andy on 2015/11/19.
  */
-function $(id) {return document.getElementById(id);}
+// function $(id) {return document.getElementById(id);}
 function show(obj) { obj.style.display = "block";}
 function hide(obj) { obj.style.display = "none";}
 function scroll() {

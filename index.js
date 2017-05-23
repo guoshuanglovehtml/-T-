@@ -79,9 +79,15 @@ window.onload = function ()
 
 $(function(){
     $(".nav_a").click(function(){
+    	// alert("a");
         refresh();
-    })
-})
+    });
+
+    $(".point").click(function(){
+    	// alert("a");
+        refresh();
+    });
+});
 function refresh(){
     window.location.reload();
-}
+};
