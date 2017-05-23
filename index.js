@@ -72,25 +72,16 @@ window.onload = function ()
 	}
 
 
-	// 2、模块跳转
+	// 2、模块跳转  刷新
 	// 导航
-	var nav_a = document.getElementsByTagName('nav')[0].children;
-	// console.log(nav_a);
-   
-    // 模块
-	var module = document.getElementsByClassName('module');
-	// console.log(module);
-
-	var leader = 0, 
-	    target = 0,
-	    timer = null;
-    
-    // 事件
-	// for (var i = 0; i < nav_a.length; i++) 
-	// {
-	// 	nav_a[i].index = i ;
-	// 	nav_a[i].onclick = function () 
-	// 	{
-	// 	}
-	// }
+	
 };
+
+$(function(){
+    $(".nav_a").click(function(){
+        refresh();
+    })
+})
+function refresh(){
+    window.location.reload();
+}

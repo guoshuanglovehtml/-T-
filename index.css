@@ -55,6 +55,11 @@ header>.header_bg{
 	float: right;
 }
 
+nav li{
+	float: left;
+	cursor: pointer;
+}
+
 nav a{
 	display: block;
 	float: left;
